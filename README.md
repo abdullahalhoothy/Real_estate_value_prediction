@@ -30,13 +30,13 @@ Exploring the dataset should always be your first step before anything else. Whi
 
 So, let&#39;s import some libraries needed for the model and have a glimpse of our dataset.
 
-![](RackMultipart20200821-4-1w9mbnh_html_1761e11783f0bed5.png)
+![](https://github.com/abdullahalhoothy/Real_estate_value_prediction/blob/master/images/image1.png)
 
-![](RackMultipart20200821-4-1w9mbnh_html_15a85c98d6f44e45.png)
+![](https://github.com/abdullahalhoothy/Real_estate_value_prediction/blob/master/images/image2.png)
 
-![](RackMultipart20200821-4-1w9mbnh_html_bc6b44765168cfc7.png)
+![](https://github.com/abdullahalhoothy/Real_estate_value_prediction/blob/master/images/image3.png)
 
-![](RackMultipart20200821-4-1w9mbnh_html_55c5c7eed7dd4515.png)
+![](https://github.com/abdullahalhoothy/Real_estate_value_prediction/blob/master/images/image4.png)
 
 So, we have over 42 thousand records of real estate prices with each of them consisting of 20 features.
 
@@ -44,13 +44,13 @@ So, we have over 42 thousand records of real estate prices with each of them con
 
 Now, as we have explored our dataset, our next step is to apply feature scaling to the dataframe in order to remove any kind of bias from our data which may arise from non-regularized measurements of different fields. Scaling is achieved using pandas as shown below.
 
-![](RackMultipart20200821-4-1w9mbnh_html_5fed1b0ebc282c18.png)
+![](https://github.com/abdullahalhoothy/Real_estate_value_prediction/blob/master/images/image5.png)
 
 ## Preparing the Data
 
 After diving in deeper, I realized there were some features which were either censored or had a lot of missing values from them. Due to this reason, they did not have a great effect on our model so we will remove them in this step, by simply deleting those fields from our dataframe.
 
-![](RackMultipart20200821-4-1w9mbnh_html_7e181b3c4b1e8b5f.png)
+![](https://github.com/abdullahalhoothy/Real_estate_value_prediction/blob/master/images/image6.png)
 
 If you noticed while exploring the dataframe, there is some categorical data in our dataset which needs to be taken care of before we train our data. Namely, garage\_type and city. Now, I hope you&#39;re aware that we cannot use categorical data to train our models. So, what do we do?
 
@@ -58,11 +58,11 @@ There is no ordinal relationship between these two fields, so we cannot possibly
 
 So, we will use One-Hot encoding here to convert our nominal data into numeric form which can be used by the algorithm.
 
-![](RackMultipart20200821-4-1w9mbnh_html_a7dd94bf6b980665.png)
+![](https://github.com/abdullahalhoothy/Real_estate_value_prediction/blob/master/images/image7.png)
 
 Now that everything is set, our concluding step in this phase of data preparation is to make arrays which will hold the data for training. We will also split the data for training and testing respectively, to know how our model is performing later. We will use two arrays, one for the features and the other one for the target value. I.e.: price. Moreover, we will reserve 30% of the data for testing while the rest of the data will be used for training.
 
-![](RackMultipart20200821-4-1w9mbnh_html_f35a58358e5bad71.png)
+![](https://github.com/abdullahalhoothy/Real_estate_value_prediction/blob/master/images/image8.png)
 
 ## Choosing the Model
 
@@ -72,7 +72,7 @@ If you have no knowledge about the boosting models, you can dive in further [her
 
 We will be using Gradient Boosting algorithm to train our data here. The model is defined as follows.
 
-![](RackMultipart20200821-4-1w9mbnh_html_394b8faada2becfe.png)
+![](https://github.com/abdullahalhoothy/Real_estate_value_prediction/blob/master/images/image9.png)
 
 ## Hyperparameter Tuning
 
@@ -96,11 +96,11 @@ I have used Grid Search CV and below mentioned are the parameters which I will b
 
 Now, we will use 5 fold cross-validation for each set of hyperparameters and fit it on our training data to see how it performs. After that, we will be fitting our model with the tuned hyperparameters onto our training data.
 
-![](RackMultipart20200821-4-1w9mbnh_html_b235d862aeccf9e6.png)
+![](https://github.com/abdullahalhoothy/Real_estate_value_prediction/blob/master/images/image10.png)
 
 To see how the tuned hyperparameters perform, we will calculate the performance metrics as the Grid Search fits our model.
 
-![](RackMultipart20200821-4-1w9mbnh_html_5c6c82dee5d5a27a.png)
+![](https://github.com/abdullahalhoothy/Real_estate_value_prediction/blob/master/images/image11.png)
 
 **\*output screenshot\***
 
@@ -114,7 +114,7 @@ Moreover, calculating the error on both testing and training data will also let 
 
 If the training accuracy is unusually high but the testing accuracy isn&#39;t, it will make the case of overfitting apparent. So, let&#39;s see.
 
-![](RackMultipart20200821-4-1w9mbnh_html_77b1d089876b42fb.png)
+![](https://github.com/abdullahalhoothy/Real_estate_value_prediction/blob/master/images/image12.png)
 
 **\*output screenshot\***
 
