@@ -2,24 +2,15 @@
 
 ## Agenda
 
-1.
-### Motivation
-2.
-### Introduction
-3.
-### The Dataset
-4.
-### Feature Scaling
-5.
-### Preparing the Data
-6.
-### Choosing the Model
-7.
-### Hyperparameter Tuning
-8.
-### Fitting &amp; Testing the Model
-9.
-### Wrap Up
+### 1.Motivation
+### 2.Introduction
+### 3.The Dataset
+### 4.Feature Scaling
+### 5.Preparing the Data
+### 6.Choosing the Model
+### 7.Hyperparameter Tuning
+### 8.Fitting &amp; Testing the Model
+### 9.Wrap Up
 
 ##
 
