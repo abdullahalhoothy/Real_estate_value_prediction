@@ -6,7 +6,7 @@
 ### 2.Motivation
 ### 3.Introduction
 ### 4.The Dataset
-### 5.Feature Scaling
+### 5.Feature Selection and Scaling 
 ### 6.Preparing the Data
 ### 7.Choosing the Model
 ### 8.Hyperparameter Tuning
@@ -15,19 +15,20 @@
 
 ## Executive Summary
 
-The business objective of a real estate value estimation is essentially finding the **optimal price to place one's real estate listing to maximize its economic benefits**". The economicals burdens that an estimation tool could relive include :
+The business objective of a real estate value estimation is essentially finding the **optimal price to place one's real estate listing to maximize its economic benefits**". The economicals burdens that an estimation tool could relive Total at around $45,600  including :
 
-  a- saving on apprisals costs($300-$700)[1]
+  a- cost of apprisals costs($300-$700)[1]
 
-  b- saving on real-estate agents costs (5%+bonus =~ $21,000)[2]
+  b- cost of real-estate agents costs (5%+bonus =~ $21,000)[2]
 
-  c- saving on CMA (Comprehensive market analysis) costs($100)
+  c- cost of CMA (Comprehensive market analysis) costs($100)
 
   d- cost of lost oppertunity (if the sale is delayed by a year because the house was set at a high price, then the price of the home could have been used in that year in other investment potentially yeilding 7% yearly ) with average price of home at $413,507 yields $28,945
 
   e- undervalued house means that you just lost on the deal say 5% less than you could have with average price of home at 413,507$ thats $20,675 lost
 
-These loses add up and sometimes go beyond the average which i assumed in calculating loses above. Total lose at around $45,600 
+
+The most important factors in determining the house's price is the size, the year it was built, the size of the garage, and the number of bedrooms and the number of bathrooms.
 
 This project is offering a solution to this problem by introducing the latest AI algorthms to allow estimation and identification of real estate price and the wide 
 range of factors and variables to get a sense of the most important combinations as well as thier power to predict house's price. This Approch provided better and more timely prediction 
@@ -66,7 +67,12 @@ So, let&#39;s import some libraries needed for the model and have a glimpse of o
 
 So, we have over 42 thousand records of real estate prices ,For each house, we capture 18 separate features. The year it was built, how many bedrooms it has. Machine learning algorithms work best when your dataset covers all possible combinations of features in your model. For example, we want our home price dataset to include prices for big houses with lots of bathrooms and no garage and no pool, but also big houses with lots of bathrooms and no garage but with a pool. The more combinations that are represented, the better the model can do at capturing how each of these attributes affects the house's final price. As a minimum, when building machine learning models, a good starting point is to have at least 10 times as many data points in the dataset as the number of features in the model. We have 18 features in our housing dataset so we'd want a bare minimum of 180 houses to work with. This isn't always an absolute requirement.
 
-## Feature Scaling
+## Feature Selection and Scaling
+
+In our house price model, if we include the 18 original features, plus the new features that were created by using one hot in coding, we have a total of 63 features. Some of the features, like the size of the house in sq feet, are probably really important to determining the value of the house. Other features, like whether the house has a fireplace, probably matter less when calculating the final price, but how much less? Maybe there are features that don't matter at all, and we can just remove them from our model. With the tree based machine learning algorithm like radiant boosting, we can actually look at the train model and have it tell us how often each feature is used in determining the final price.
+To do that, we call model.feature importances ending with an underscore. In scikit-learn, this will give us an array containing the feature importance for each feature. The total of all feature importances will add up to one, so you can think of this as a percentage rating of how often the feature is used in determining a house's value. To make the list of features easier to read, let's sort them from most important to least important. We'll use numpy's argsort function to give the list of array indexes pointing to each element in the array in order. Then we'll use a forward loop to print out each feature name and how important it is. Let's run the program; right click and choose run. Here at the bottom, we can see that these last few features are the most important in the house's price. The most important factors in determining the house's price is the size, the year it was built, the size of the garage, and the number of bedrooms and the number of bathrooms.
+
+![](https://github.com/abdullahalhoothy/Real_estate_value_prediction/blob/master/images/featureselection.png)
 
 Now, as we have explored our dataset, our next step is to apply feature scaling to the dataframe in order to remove any kind of bias from our data which may arise from non-regularized measurements of different fields. Scaling is achieved using pandas as shown below.
 
