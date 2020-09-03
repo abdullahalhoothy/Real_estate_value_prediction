@@ -64,7 +64,7 @@ So, let&#39;s import some libraries needed for the model and have a glimpse of o
 
 ![](https://github.com/abdullahalhoothy/Real_estate_value_prediction/blob/master/images/image4.png)
 
-So, we have over 42 thousand records of real estate prices with each of them consisting of 20 features.
+So, we have over 42 thousand records of real estate prices ,For each house, we capture 18 separate features. The year it was built, how many bedrooms it has. Machine learning algorithms work best when your dataset covers all possible combinations of features in your model. For example, we want our home price dataset to include prices for big houses with lots of bathrooms and no garage and no pool, but also big houses with lots of bathrooms and no garage but with a pool. The more combinations that are represented, the better the model can do at capturing how each of these attributes affects the house's final price. As a minimum, when building machine learning models, a good starting point is to have at least 10 times as many data points in the dataset as the number of features in the model. We have 18 features in our housing dataset so we'd want a bare minimum of 180 houses to work with. This isn't always an absolute requirement.
 
 ## Feature Scaling
 
