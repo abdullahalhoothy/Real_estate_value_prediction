@@ -2,17 +2,43 @@
 
 ## Agenda
 
-### 1.Motivation
-### 2.Introduction
-### 3.The Dataset
-### 4.Feature Scaling
-### 5.Preparing the Data
-### 6.Choosing the Model
-### 7.Hyperparameter Tuning
-### 8.Fitting &amp; Testing the Model
-### 9.Wrap Up
+### 1.Executive Summary
+### 2.Motivation
+### 3.Introduction
+### 4.The Dataset
+### 5.Feature Scaling
+### 6.Preparing the Data
+### 7.Choosing the Model
+### 8.Hyperparameter Tuning
+### 9.Fitting &amp; Testing the Model
+### 10.Wrap Up
 
-##
+## Executive Summary
+
+The business objective of a real estate value estimation is essentially finding the **optimal price to place one's real estate listing to maximize its economic benefits**". The economicals burdens that an estimation tool could relive include :
+
+  a- saving on apprisals costs($300-$700)[1]
+
+  b- saving on real-estate agents costs (5%+bonus =~ $21,000)[2]
+
+  c- saving on CMA (Comprehensive market analysis) costs($100)
+
+  d- cost of lost oppertunity (if the sale is delayed by a year because the house was set at a high price, then the price of the home could have been used in that year in other investment potentially yeilding 7% yearly ) with average price of home at $413,507 yields $28,945
+
+  e- undervalued house means that you just lost on the deal say 5% less than you could have with average price of home at 413,507$ thats $20,675 lost
+
+These loses add up and sometimes go beyond the average which i assumed in calculating loses above. Total lose at around $45,600 
+
+This project is offering a solution to this problem by introducing the latest AI algorthms to allow estimation and identification of real estate price and the wide 
+range of factors and variables to get a sense of the most important combinations as well as thier power to predict house's price. This Approch provided better and more timely prediction 
+compared to orgnizations who do not adopt the use of the latest AI technologies
+
+
+1- https://justo.ca/blog/how-much-will-a-home-appraisal-cost-in-ontario/
+
+2- https://www.getwhatyouwant.ca/real-estate-commission-explained
+
+
 
 ## Motivation
 
