@@ -110,7 +110,9 @@ We will be using Gradient Boosting algorithm to train our data here. The model i
 
 Finally, we have arrived at our last step before we can actually get the results. While this step is not necessary, configuring the hyperparameters using grid search can greatly improve the performance of our model.
 
+If the error rate for our training data is very low, but the error rate for our test data set is very high, that means our model is overfitting. We know this because the model perfectly fit our training data, but it didn't generalize to fit the test data at all. Models that are too complex will overfit. 
 Basically, Grid Search iteratively goes through our data to return the configurations of hyperparameters which are the most suitable according to our dataset and how it fits the model.
+Two common problems in machines learning models are over fitting and under fitting. We can often fix either problem by adjusting the hyperparameters on our model. The problem is that machine learning models have lots of hyperparameters to adjust. Often the best way to find the best settings is just through trial and error, but it can take a lot of work to try all the possible combinations. A solution for this problem is to use a grid search. A grid search is where you list out a range of settings you want to try for each parameter, and you literally try them all. You train and test the model for every combination of parameters. The combination of parameters that generates the best predictions are the set of parameters you should use for your real model. Luckily, scikit-learn totally automates this process.
 
 I have used Grid Search CV and below mentioned are the parameters which I will be tuning.
 
