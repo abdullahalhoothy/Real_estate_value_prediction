@@ -31,9 +31,9 @@ The business objective of a real estate value estimation is essentially finding 
 The most important factors in determining the house's price is the size, the year it was built, the size of the garage, and the number of bedrooms and the number of bathrooms.
 
 This project is offering a solution to this problem by introducing the latest AI algorthms to allow estimation and identification of real estate price and the wide 
-range of factors and variables to get a sense of the most important combinations as well as thier power to predict house's price. This Approch provided better and more timely prediction 
-compared to orgnizations who do not adopt the use of the latest AI technologies
+range of factors and variables to get a sense of the most important combinations as well as thier power to predict house's price. This Approch provided better and more timely prediction compared to orgnizations who do not adopt the use of the latest AI technologies
 
+Checkout the **dashboard** here :https://public.tableau.com/profile/abdulah.abbas.m.alhoothy#!/vizhome/realestatedashboardpublic/Dashboard1?publish=yes
 
 1- https://justo.ca/blog/how-much-will-a-home-appraisal-cost-in-ontario/
 
