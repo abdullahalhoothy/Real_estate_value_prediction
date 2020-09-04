@@ -15,7 +15,7 @@
 
 ## Executive Summary
 
-The business objective of a real estate value estimation is essentially finding the **optimal price to place one's real estate listing to maximize its economic benefits**". The economicals burdens that an estimation tool could relive Total at around $45,600  including :
+The business objective of a real estate value estimation is essentially finding the **optimal price to place one's real estate listing to maximize its economic benefits**". The economicals burdens that an estimation tool could relive total at around $45,600  including :
 
   a- cost of apprisals costs($300-$700)[1]
 
@@ -28,7 +28,7 @@ The business objective of a real estate value estimation is essentially finding 
   e- undervalued house means that you just lost on the deal say 5% less than you could have with average price of home at 413,507$ thats $20,675 lost
 
 
-The most important factors in determining the house's price is the size, the year it was built, the size of the garage, and the number of bedrooms and the number of bathrooms.
+from the model we can see that the most important factors in determining the house's price is the size, the year it was built, the size of the garage, and the number of bedrooms and the number of bathrooms.
 
 This project is offering a solution to this problem by introducing the latest AI algorthms to allow estimation and identification of real estate price and the wide 
 range of factors and variables to get a sense of the most important combinations as well as thier power to predict house's price. This Approch provided better and more timely prediction compared to orgnizations who do not adopt the use of the latest AI technologies
